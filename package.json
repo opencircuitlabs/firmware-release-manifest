@@ -1,0 +1,12 @@
+{
+  "name": "@opencircuitlabs/firmware-release-manifest",
+  "version": "1.0.0",
+  "description": "Canonical signed firmware releases, compatibility, rollout, and artifact verification",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "bin": { "firmware-release": "src/cli.js" },
+  "scripts": { "test": "node --test", "check": "npm test" },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}

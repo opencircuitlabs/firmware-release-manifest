@@ -1,0 +1,18 @@
+{
+  "product": "sensor-node",
+  "version": "1.2.0",
+  "channel": "stable",
+  "createdAt": "2026-10-01T00:00:00.000Z",
+  "releaseNotes": "Adds verified telemetry recovery.",
+  "artifacts": [
+    { "id": "application", "path": "firmware.bin", "fileName": "firmware.bin", "type": "firmware", "url": "https://releases.example/firmware.bin" },
+    { "id": "sbom", "path": "sbom.json", "fileName": "sbom.json", "type": "sbom", "mediaType": "application/vnd.cyclonedx+json", "url": "https://releases.example/sbom.json" }
+  ],
+  "targets": [
+    { "board": "sensor-v2", "hardwareMin": "2.0.0", "hardwareMax": "2.9.9" }
+  ],
+  "minimumBootloader": "1.1.0",
+  "rollout": { "percentage": 25, "seed": "sensor-node-1.2.0" },
+  "sbom": { "format": "CycloneDX", "artifactId": "sbom" },
+  "provenance": { "sourceRevision": "abc123", "builder": "ci" }
+}
